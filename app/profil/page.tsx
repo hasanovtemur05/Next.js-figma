@@ -26,6 +26,7 @@ const Page = () => {
                 <Link
                   href={item.link}
                   key={item.id}
+                  
                   className="text-[12px] font-medium hover:text-[#1DBF73] ease-in-out duration-300 lg:text-[16px]"
                 >
                   {item.title}
@@ -42,7 +43,7 @@ const Page = () => {
             </div>
             <div className="flex items-center gap-[15px]">
               <h1 className="text-[16px] text-[#222222]">Ернар Ибрагимов</h1>
-              <Image src="profil.svg" alt="profil" width={55} height={55} />
+              <Image src="profil.svg" priority alt="profil" width={55} height={55} />
             </div>
           </div>
 
@@ -136,7 +137,6 @@ const Page = () => {
 
       <div className="w-[85%] m-auto mt-[40px] md:mt-[60px] lg:mt-[80px] flex flex-col gap-[30px]">
         <h1 className="text-[16px] text-[#222222] font-medium md:text-[18px] lg:text-[24px]">Мой ворки</h1>
-
         <div className="w-full h-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:gap-8">
           <div className="w-full  h-auto rounded-[20px] overflow-hidden border-[#D3D3D3] border-[1px] duration-500 ease-in-out group hover:scale-105 hover:shadow-[0px_0px_20px_5px_rgba(211,211,211,0.5)] flex flex-col justify-center items-center py-[50px]  gap-5">
             <Image src="/plus.svg" alt="card" width={70} height={700} />

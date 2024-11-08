@@ -11,6 +11,7 @@ const Page = () => {
             alt="logo"
             width={130}
             height={40}
+            priority
           />
         </div>
         <div className="w-[80%] flex flex-col gap-4">

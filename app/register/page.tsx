@@ -11,6 +11,7 @@ const Page = () => {
             alt="logo"
             width={160}
             height={40}
+            priority
             className="lg:mt-[40px]"
           />
         </div>
