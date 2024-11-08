@@ -6,11 +6,9 @@ import { useState } from "react";
 const Page = () => {
   const [open, setOpen] = useState(false);
   const routes = [
-    { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "Profil", link: "/profil" },
-    { id: 3, title: "Биржа", link: "/about" },
-    { id: 4, title: "Ворки", link: "/contact" },
-    { id: 5, title: "Конкурсы", link: "/blog" },
+    { id: 1, title: "Биржа", link: "/about" },
+    { id: 2, title: "Ворки", link: "/contact" },
+    { id: 3, title: "Конкурсы", link: "/blog" },
   ];
 
   return (

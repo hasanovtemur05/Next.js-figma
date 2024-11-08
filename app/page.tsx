@@ -5,10 +5,9 @@ import { useState } from "react";
 export default function Home() {
   const [open, setOpen] = useState(false);
   const routes = [
-    { id: 1, title: "Home", link: "/" },
-    { id: 3, title: "Биржа", link: "/about" },
-    { id: 4, title: "Ворки", link: "/contact" },
-    { id: 5, title: "Конкурсы", link: "/blog" },
+    { id: 1, title: "Биржа", link: "/about" },
+    { id: 2, title: "Ворки", link: "/contact" },
+    { id: 3, title: "Конкурсы", link: "/blog" },
   ];
   return (
     <div className="w-full h-auto">
@@ -517,17 +516,17 @@ export default function Home() {
                 <Image
                   src="/facebook.svg"
                   alt="facebook"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
                 <Image
                   src="/twinter.svg"
                   alt="facebook"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                 />
-                <Image src="/insta.svg" alt="facebook" width={50} height={50} />
-                <Image src="/in.svg" alt="facebook" width={50} height={50} />
+                <Image src="/insta.svg" alt="facebook" width={30} height={30} />
+                <Image src="/in.svg" alt="facebook" width={30} height={30} />
               </div>
             </div>
           </div>
