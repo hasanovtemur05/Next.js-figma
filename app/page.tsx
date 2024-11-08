@@ -6,7 +6,6 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const routes = [
     { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "Profil", link: "/profil" },
     { id: 3, title: "Биржа", link: "/about" },
     { id: 4, title: "Ворки", link: "/contact" },
     { id: 5, title: "Конкурсы", link: "/blog" },
@@ -16,7 +15,7 @@ export default function Home() {
       <div className="w-full bg-white sticky top-[0] left-[0] z-[99] shadow-md">
         <div className="w-[85%] m-auto h-[70px] flex justify-between items-center lg:h-[80px]">
           <div className="flex gap-[60px] lg:gap-[50px] items-center">
-            <Image src="/logo.svg" alt="logo" width={140} height={50} />
+            <Link href="/" ><Image src="/logo.svg" alt="logo" width={140} height={50} /></Link>
             <nav className="hidden md:flex gap-[30px] items-center lg:gap-[40px]">
               {routes.map((item) => (
                 <Link

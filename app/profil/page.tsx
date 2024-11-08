@@ -20,7 +20,7 @@ const Page = () => {
       <div className="w-full bg-white sticky top-0 left-0 z-[99] shadow-md">
         <div className="w-[85%] m-auto h-[70px] flex justify-between items-center lg:h-[80px]">
           <div className="flex gap-[60px] lg:gap-[50px] items-center">
-            <Image src="/logo.svg" alt="logo" width={140} height={50} />
+            <Link href="/"><Image src="/logo.svg" alt="logo" width={140} height={50} /></Link>
             <nav className="hidden lg:flex gap-[30px] items-center lg:gap-[40px]">
               {routes.map((item) => (
                 <Link

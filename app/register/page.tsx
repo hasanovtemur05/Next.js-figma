@@ -6,14 +6,16 @@ const Page = () => {
     <div className="w-full h-auto lg:grid lg:grid-cols-2 lg:h-[100vh] ">
       <div className="flex flex-col items-center py-5 lg:ml-[70px]">
         <div className="w-[80%]">
-          <Image
+         <Link href="/" >
+         <Image
             src="/logo.svg"
             alt="logo"
             width={160}
             height={40}
             priority
             className="lg:mt-[40px]"
-          />
+          /> 
+         </Link>
         </div>
         <div className="w-[80%] flex flex-col gap-5">
           <p className="text-[#222222] text-[14px] mt-[60px] lg:text-[16px]">
