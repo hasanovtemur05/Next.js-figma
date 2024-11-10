@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -10,11 +11,11 @@ const Page = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    const userData = localStorage.getItem("userData");
-    if (userData) {
-      const { email: email, password: password } =
-        JSON.parse(userData);
-      if (email === email && password === password) {
+    const userData2 = localStorage.getItem("userData");
+    if (userData2) {
+      const { email: saveEmail, password: savePassword } = JSON.parse(userData2);
+
+      if (email === saveEmail && password === savePassword) {
         router.push("/profil");
       } else {
         alert("error");
